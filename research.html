@@ -1,60 +1,79 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Personal homepage of Daehyeok Kim, undergraduate researcher at KENTECH.">
-<title>Research · Daehyeok Kim</title>
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Personal homepage of Daehyeok Kim, undergraduate researcher at KENTECH.">
+  <title>Research · Daehyeok Kim</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+  <header>
+    <div class="nav">
+      <a class="brand" href="index.html">Daehyeok Kim</a>
 
-<header>
-  <div class="nav">
-    <a class="brand" href="index.html">Daehyeok Kim</a>
-    <nav>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="research.html">Research</a>
+      </nav>
+
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+    </div>
+
+    <div class="mobile-menu">
       <a href="index.html">Home</a>
       <a href="cv.html">CV</a>
-      <div class="dropdown">
-        <a href="project.html">Project ▾</a>
-        <div class="dropdown-menu">
-          <a href="research.html">Research</a>
-        </div>
+      <a href="research.html">Research</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <h1>Research</h1>
+        <p>Selected research works</p>
       </div>
-    </nav>
-    <button class="menu-btn" aria-label="Open menu">☰</button>
-  </div>
-  <div class="mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="cv.html">CV</a>
-    <a href="project.html">Project</a>
-    <a href="research.html">Research</a>
-  </div>
-</header>
+    </section>
 
+    <section class="container">
+      <article class="research-entry">
+        <h2>Structural and Dynamical Crossovers in Dense Electrolytes</h2>
+        <p><strong>Daehyeok Kim, Taejin Kwon*, and Jeongmin Kim*</strong></p>
+        <p class="date">February 3, 2026 · Physical Review E</p>
+        <p>
+          Using molecular dynamics simulations of primitive electrolytes with and without
+          space-filling solvent particles, this work elucidates structural and dynamical
+          crossovers that emerge with increasing salt concentration.
+        </p>
+        <p>
+          Explicit-solvent electrolytes exhibit a transition from a charge-dominated dilute
+          regime to a density-dominated concentrated regime, accompanied by crossovers in ion
+          self-diffusion and ion-pair lifetimes. The results identify local ion pairing and
+          small aggregates as key microscopic origins of these changes.
+        </p>
+        <p>
+          <a href="https://journals.aps.org/pre/abstract/10.1103/t1m7-8qm2" target="_blank">View publication</a>
+          ·
+          <a href="https://github.com/daehyeok48/Structural-and-Dynamical-Crossovers-in-Dense-Electrolytes" target="_blank">Author GitHub</a>
+        </p>
+        <div class="callout">* Corresponding author</div>
+      </article>
 
-<main>
-<section class="page-head"><div class="container"><h1>Research</h1><p>Selected research works</p></div></section>
-<section class="container">
-<article class="project-entry">
-<h2>Structural and Dynamical Crossovers in Dense Electrolytes</h2>
-<p><strong>Daehyeok Kim, Taejin Kwon*, and Jeongmin Kim*</strong></p>
-<p class="date">February 3, 2026 · Physical Review E</p>
-<p>Using molecular dynamics simulations of primitive electrolytes with and without space-filling solvent particles, this work elucidates structural and dynamical crossovers that emerge with increasing salt concentration.</p>
-<p>Explicit-solvent electrolytes exhibit a transition from a charge-dominated dilute regime to a density-dominated concentrated regime, accompanied by crossovers in ion self-diffusion and ion-pair lifetimes. The results identify local ion pairing and small aggregates as key microscopic origins of these changes.</p>
-<p><a href="https://journals.aps.org/pre/abstract/10.1103/t1m7-8qm2" target="_blank">View publication</a> · <a href="https://github.com/daehyeok48/Structural-and-Dynamical-Crossovers-in-Dense-Electrolytes" target="_blank">Author GitHub</a></p>
-<div class="callout">* Corresponding author</div>
-</article>
-<article class="project-entry">
-<h2>From Uniform Nanocrystals to Organized Materials</h2>
-<p>Ongoing research on the collective organization, self-assembly, and functional behavior of nanocrystal systems.</p>
-</article>
-</section>
-</main>
+      <article class="research-entry">
+        <h2>From Uniform Nanocrystals to Organized Materials</h2>
+        <p>
+          Ongoing research on the collective organization, self-assembly, and functional
+          behavior of nanocrystal systems.
+        </p>
+      </article>
+    </section>
+  </main>
 
+  <footer>
+    <div>© 2026 Daehyeok Kim.</div>
+  </footer>
 
-<footer><div>© 2026 Daehyeok Kim. Hosted with GitHub Pages.</div></footer>
-<script src="assets/script.js"></script>
-
+  <script src="assets/script.js"></script>
 </body>
 </html>
