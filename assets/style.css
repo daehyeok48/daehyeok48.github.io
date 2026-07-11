@@ -134,6 +134,14 @@ h1 {
   gap: 56px;
 }
 
+.home-intro {
+  padding-bottom: 20px;
+}
+
+.home-about {
+  padding-top: 20px;
+}
+
 h2 {
   margin: 0 0 18px;
   font-size: 30px;
@@ -159,6 +167,57 @@ h3 {
   flex-wrap: wrap;
   gap: 16px;
   margin-top: 10px;
+}
+
+.research-topic {
+  display: grid;
+  grid-template-columns: minmax(0, 38%) minmax(0, 1fr);
+  align-items: center;
+  gap: 56px;
+}
+
+.research-topic-reverse {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 38%);
+}
+
+.research-disclaimer {
+  padding-top: 28px;
+  padding-bottom: 0;
+}
+
+.research-disclaimer p {
+  max-width: 850px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.research-topic + .research-topic {
+  border-top: 1px solid var(--line);
+}
+
+.research-figure {
+  margin: 0;
+}
+
+.research-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.research-figure-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+  color: var(--muted);
+  background: var(--soft);
+  border: 1px solid var(--line);
+}
+
+.research-copy p {
+  color: var(--muted);
 }
 
 .page-head {
@@ -200,6 +259,25 @@ h3 {
   margin: 4px 0;
 }
 
+.location,
+.cv-detail-list {
+  font-size: 0.95em;
+}
+
+.cv-subhead {
+  margin: 14px 0 4px;
+  font-size: 16px;
+}
+
+.cv-detail-list {
+  margin: 4px 0 12px;
+  padding-left: 20px;
+}
+
+.cv-detail-list li {
+  margin: 4px 0;
+}
+
 .meta {
   color: var(--muted);
   font-size: 14px;
@@ -233,9 +311,18 @@ footer {
   font-size: 14px;
 }
 
-footer div {
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   max-width: var(--max);
   margin: auto;
+}
+
+.footer-inner a {
+  flex: 0 0 auto;
+  text-align: right;
 }
 
 @media (max-width: 760px) {
@@ -260,11 +347,34 @@ footer div {
   }
 
   .two-col,
+  .research-topic,
   .cv-row {
     grid-template-columns: 1fr;
   }
 
+  .research-figure {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .research-figure-placeholder {
+    min-height: 200px;
+  }
+
+  .research-topic-reverse .research-copy {
+    order: 2;
+  }
+
+  .research-topic-reverse .research-figure {
+    order: 1;
+  }
+
   .cv-row {
     gap: 4px;
+  }
+
+  .footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
