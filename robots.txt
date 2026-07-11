@@ -1,0 +1,6 @@
+# Automated crawling, scraping, bulk downloading, dataset construction,
+# database aggregation, and AI/ML training or retrieval use are not permitted
+# without prior written permission. See /site-info.html.
+
+User-agent: *
+Disallow: /
