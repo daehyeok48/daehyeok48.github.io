@@ -19,3 +19,6 @@ change abstract on publication page to overview
 v2.2
 add patch_note.md file
 re-open page
+
+v2.2.1
+renew publication
