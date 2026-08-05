@@ -1,3 +1,6 @@
+vx.x.a
+for all third number of version means minor update such as publication update.
+
 v0.1
 migration from google sites
 
@@ -19,6 +22,3 @@ change abstract on publication page to overview
 v2.2
 add patch_note.md file
 re-open page
-
-v2.2.1
-renew publication
